@@ -1,0 +1,99 @@
+.modeButton {
+  -fx-background-color: #292929;
+  -fx-background-radius: 5, 4, 3, 5;
+  -fx-background-insets: 0, 1, 2, 0;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 1);
+  -fx-font-family: "Arial";
+  -fx-text-fill: linear-gradient(white, #d0d0d0);
+  -fx-font-size: 12px;
+  -fx-padding: 10 20 10 20;
+}
+.modeButton Text {
+  -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.9), 1, 0, 0, 1);
+}
+
+.modeButton:hover {
+  -fx-background-color: linear-gradient(
+      from 0% 93% to 0% 100%,
+      #a34313 0%,
+      #903b12 100%
+    ),
+    #9d4024, #d86e3a,
+    radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+
+.modeButton:pressed {
+  -fx-font-weight: bold;
+}
+
+.skillButton {
+  fx-padding: 8 15 15 15;
+  -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+  -fx-background-radius: 8;
+  -fx-background-color: linear-gradient(
+      from 0% 93% to 0% 100%,
+      #a34313 0%,
+      #903b12 100%
+    ),
+    #9d4024, #d86e3a,
+    radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0, 0, 1);
+  -fx-padding: 10 15 13 15;
+  -fx-font-weight: bold;
+  -fx-font-size: 1.1em;
+  -fx-text-fill: white;
+}
+
+.skillButton:hover {
+  -fx-background-color: linear-gradient(
+      from 0% 93% to 0% 100%,
+      #a34313 0%,
+      #903b12 100%
+    ),
+    #9d4024, #d86e3a,
+    radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+
+.skillButton:pressed {
+  -fx-padding: 10 15 13 15;
+  -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+.skillButton Text {
+  -fx-fill: white;
+  -fx-effect: dropshadow(gaussian, #a30000, 0, 0, 0, 2);
+}
+
+.leftVbox {
+  -fx-background-color: linear-gradient(
+      #686868 0%,
+      #232723 25%,
+      #373837 75%,
+      #757575 100%
+    ),
+    linear-gradient(#020b02, #3a3a3a),
+    linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+    linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+    linear-gradient(#1b1b1b 0%, #505250 50%, #816b3c 80%, #816b3c 100%);
+
+  -fx-background-radius: 10, 10, 10, 10;
+  -fx-effect: dropshadow(three-pass-box, rgb(51, 51, 51), 5, 0, 0, 5);
+  -fx-text-fill: white;
+}
+
+.rightVbox {
+  -fx-background-color: linear-gradient(
+      #686868 0%,
+      #232723 25%,
+      #373837 75%,
+      #757575 100%
+    ),
+    linear-gradient(#e9e9e9, #a7a7a7),
+    linear-gradient(#e9e9e9 0%, #e9e9e9 20%, #9d9e9d 80%, #9d9e9d 100%),
+    linear-gradient(#8a8a8a 0%, #9d9e9d 20%, #9d9e9d 80%, #9d9e9d 100%),
+    linear-gradient(#141e41 0%, #2741a1 50%, #2741a1 80%, #0e2d9e 100%);
+  -fx-background-radius: 10, 10, 10, 10;
+  -fx-effect: dropshadow(gaussian, rgb(51, 51, 51), 5, 0, 0, 5);
+}
